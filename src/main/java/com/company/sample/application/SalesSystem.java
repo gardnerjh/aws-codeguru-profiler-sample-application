@@ -34,6 +34,7 @@ public class SalesSystem {
         //Start the profiler
         Profiler systemProfiler =
             Profiler.builder().profilingGroupName("<Insert the profiling group name here>")
+            .withHeapSummary(true)
             .awsCredentialsProvider(DefaultCredentialsProvider.create())
             .build();
 
